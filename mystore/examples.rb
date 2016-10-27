@@ -1,10 +1,10 @@
-require File.dirname(__FILE__) + '/printfulclient'
+require File.dirname(__FILE__) + '/app/models/spree/printfulclient'
 require  'pp'
 
 #
 # Replace this with your API key
 #
-key = 'YOUR_API_KEY'
+key = 'thkdrylg-da0m-2b90:c1tb-cqp9kpovds9y'
 
 pf = PrintfulClient.new(key)
 
@@ -12,7 +12,7 @@ begin
     #
     #Uncomment any of the following examples to test it
     #
-    
+
     #Get information about the store
     #pp pf.get('store')
 
@@ -83,7 +83,6 @@ begin
 =end
 
     #Create an order and confirm immediately
-=begin
     pp pf.post('orders',
         {
             recipient:  {
@@ -101,14 +100,13 @@ begin
                     retail_price: '19.99', #Retail price for packing slip
                     quantity: 1,
                     files: [
-                        {url: 'http://example.com/files/posters/poster_1.jpg'}                  
+                        {url: 'http://example.com/files/posters/poster_1.jpg'}
                     ]
                 }
             ]
         },
         {confirm: 1}
     )
-=end
 
 
     #Calculate shipping rates for an order
