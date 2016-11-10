@@ -1,13 +1,14 @@
 module Spree
   module Calculator::Shipping
     class Printful < Spree::ShippingCalculator
+      include PrintfulConcern
+
       def self.description
-        # Human readable description of the calculator
+        Spree.t(:printful_shipping_calculator)
       end
 
       def compute_package(package)
-        # Returns the value after performing the required calculation
-        {}
+        shipping = Spree::Calculator::Shipping::Printful.get_printful_shipping(package.order)
       end
     end
   end

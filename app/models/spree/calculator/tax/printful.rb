@@ -1,12 +1,14 @@
 module Spree
   module Calculator::Tax
     class Printful < Spree::Calculator
+      include PrintfulConcern
+
       def self.description
-        # Human readable description of the calculator
+        Spree.t(:printful_tax_calculator)
       end
 
       def compute(object=nil)
-        # Returns the value after performing the required calculation
+        tax = Spree::Calculator::Tax::Printful.get_printful_shipping(package)
         {}
       end
     end
