@@ -1,0 +1,16 @@
+{
+  "recipient": {
+    "address1": "19749 Dearborn St",
+    "city": "Chatsworth",
+    "country_code": "US",
+    "state_code": "CA",
+    "zip": 91311
+    },
+  "items": [{
+    "quantity": 1,
+    "variant_id": 2
+  }, {
+    "quantity": 5,
+    "variant_id": 202
+  }]
+}
