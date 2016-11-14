@@ -1,0 +1,10 @@
+/* Header */
+
+#spree-header {
+  background: black;
+  margin-bottom: 0;
+}
+
+#spree-header #header {
+  padding: 0;
+}

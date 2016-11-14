@@ -1,0 +1,39 @@
+/* Navigation */
+.search-submit {
+  display: inline-block;
+  position: relative;
+}
+
+.search-submit-btn {
+  padding: 6px 20px;
+  background-color: #888;
+  border: none;
+}
+
+.search-submit-btn:hover {
+  background-color: #666;
+}
+
+.navi-text {
+  padding: 15px 5px;
+}
+
+.navi-text a {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+}
+
+.navi-text a:hover {
+  color: ;
+  text-decoration: none;
+}
+
+.navi-wrapper ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.navi-wrapper li {
+  display: inline-block;
+}
